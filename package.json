@@ -1,0 +1,34 @@
+{
+  "name": "royal-loyalty",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Royal Loyalty Card system for Welcome Friends & Al Madina Hypermarkets (5 branches, Qatar)",
+  "main": "server/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "node --watch server/server.js",
+    "test": "node --test test/*.test.js",
+    "seed:demo": "node server/seed.js --demo",
+    "reset": "node server/seed.js --reset",
+    "vendor": "node scripts/vendor.js",
+    "icons": "node scripts/make-icons.js"
+  },
+  "engines": {
+    "node": ">=22.13"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@fontsource-variable/manrope": "^5.3.0",
+    "@fontsource/amiri": "^5.3.0",
+    "@fontsource/cinzel": "^5.3.0",
+    "@fontsource/jetbrains-mono": "^5.3.0",
+    "html5-qrcode": "^2.3.8",
+    "jsbarcode": "^3.12.3",
+    "qrcode-generator": "^2.0.4",
+    "sharp": "^0.35.4"
+  }
+}

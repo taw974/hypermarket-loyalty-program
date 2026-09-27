@@ -1,0 +1,42 @@
+/* Member digital card — mobile first */
+body.mpage {
+  min-height: 100vh;
+  background: radial-gradient(700px 500px at 50% -10%, rgba(212, 175, 55, 0.16), transparent 65%), radial-gradient(600px 400px at 50% 110%, rgba(212, 175, 55, 0.08), transparent 60%), #070608;
+}
+.m-wrap { max-width: 520px; margin: 0 auto; padding: max(16px, env(safe-area-inset-top)) 16px 40px; display: flex; flex-direction: column; gap: 18px; }
+.m-loading { min-height: 80vh; display: grid; place-items: center; color: var(--gold-3); }
+.m-loading .spinner { width: 30px; height: 30px; border-width: 3px; }
+.m-error { min-height: 80vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 12px; }
+.m-head { display: flex; justify-content: space-between; align-items: center; padding: 6px 2px; }
+.m-brand { display: flex; align-items: center; gap: 10px; }
+.m-brand span { display: flex; flex-direction: column; line-height: 1.05; }
+.m-brand b { font-family: var(--font-display); letter-spacing: .24em; font-size: 17px; background: var(--gold-foil); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.m-brand small { font-size: 8.5px; letter-spacing: .3em; color: var(--text-3); font-weight: 800; }
+.m-hello h1 { font-size: 30px; letter-spacing: .04em; margin: 6px 0 6px; }
+.m-kicker { display: flex; align-items: center; gap: 6px; color: var(--gold-text); font-weight: 800; font-size: 12px; letter-spacing: .1em; text-transform: uppercase; }
+.m-card { padding: 4px 4px 34px; }
+.m-scan { display: flex; flex-direction: column; align-items: center; gap: 12px; padding: 20px; text-align: center; }
+.m-scan.disabled .m-qr, .m-scan.disabled .m-bc { opacity: .25; filter: grayscale(1); }
+.m-scan-title { display: flex; align-items: center; gap: 8px; font-weight: 800; letter-spacing: .06em; color: var(--gold-text); text-transform: uppercase; font-size: 12.5px; }
+.m-qr { padding: 10px; background: #fff; border-radius: 18px; box-shadow: 0 0 0 1px rgba(212, 175, 55, 0.5), 0 20px 50px -20px rgba(212, 175, 55, 0.6); }
+.m-qr svg { width: 210px; height: 210px; }
+.m-bc { width: 100%; padding: 10px 12px 4px; background: #fff; border-radius: 14px; }
+.m-barcode { width: 100%; height: 64px; display: block; }
+.m-no { font-family: var(--font-mono); font-size: 18px; letter-spacing: .14em; }
+.m-warn { display: flex; gap: 8px; align-items: center; color: var(--critical-text); font-weight: 700; font-size: 13px; }
+.m-stats { display: grid; grid-template-columns: 1.3fr 1fr 1fr; gap: 10px; }
+.m-stats .panel { padding: 14px; display: flex; flex-direction: column; gap: 2px; }
+.m-stats span { font-size: 11px; color: var(--text-3); font-weight: 700; text-transform: uppercase; letter-spacing: .05em; }
+.m-stats b { font-size: 18px; font-variant-numeric: tabular-nums; }
+.m-stats .highlight { border-color: var(--line-3); background: linear-gradient(135deg, rgba(212, 175, 55, 0.14), var(--surface-1)); }
+.m-list { padding: 18px; display: flex; flex-direction: column; gap: 4px; }
+.m-list h2, .m-how h2 { display: flex; align-items: center; gap: 8px; font-size: 14px; margin-bottom: 8px; color: var(--text-2); }
+.m-row { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--line); }
+.m-row:last-child { border-bottom: 0; }
+.m-row small { display: block; color: var(--text-3); font-size: 12px; }
+.m-row b { font-size: 13.5px; }
+.m-actions { display: flex; gap: 6px; flex: none; }
+.m-how { padding: 18px; }
+.m-how ol { margin: 0; padding-left: 20px; display: grid; gap: 6px; color: var(--text-2); }
+.m-foot { text-align: center; display: flex; flex-direction: column; gap: 6px; padding: 10px 6px; font-size: 12.5px; color: var(--text-2); }
+.m-foot .arabic { font-size: 22px; color: var(--gold-text); }

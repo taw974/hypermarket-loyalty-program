@@ -1,0 +1,16 @@
+{
+  "name": "Royal Loyalty — Welcome Friends & Al Madina",
+  "short_name": "Royal Loyalty",
+  "description": "Royal Loyalty Card system for Welcome Friends & Al Madina Hypermarkets",
+  "start_url": "/#/pos",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0b0a0d",
+  "theme_color": "#0b0a0d",
+  "icons": [
+    { "src": "/img/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/img/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/img/icon-512-maskable.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "/img/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}
